@@ -1,3 +1,4 @@
+import * as types from './../constants/ActionType'
 var initialState = [
     {
         id: 1,
@@ -35,6 +36,9 @@ var initialState = [
 
 var gifsReducer = (state = initialState, action) => {
     switch (action.type) {
+        case types.ADD_TASK :
+            console.log(action) 
+            return state;
         default:
             return state;
     }
